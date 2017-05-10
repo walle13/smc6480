@@ -296,7 +296,7 @@ enum ERR_CODE_SMC6X
 输出：卡链接handle
 返回值：错误码
 *************************************************************/
-SMC6200API  int32 __stdcall SMCOpen(SMC6X_CONNECTION_TYPE type, char *pconnectstring ,SMCHANDLE * phandle);
+SMC6200API  int32 __stdcall SMCOpen(enum SMC6X_CONNECTION_TYPE type, char *pconnectstring ,SMCHANDLE * phandle);
 
 /*************************************************************
 说明：与控制器建立链接
@@ -1109,6 +1109,10 @@ SMC6200API  int32 __stdcall SMCVectMoveLine2(SMCHANDLE handle, uint8 iaxis1, dou
 *************************************************************/
 SMC6200API  int32 __stdcall SMCVectMoveLineN(SMCHANDLE handle, uint8 itotalaxis, uint8* piaxisList, double* DistanceList, double dspeed, uint8 bIfAbs);
 
+//3D打印等应用通过模拟量（电压）进行热熔胶的比例控制
+SMC6200API  int32 __stdcall SMCVectMoveLineN_Extern(SMCHANDLE handle, uint8 itotalaxis, uint8* piaxisList, double* DistanceList, double dspeed, uint8 bIfAbs, char* pVoltOut);
+
+
 /*************************************************************
 说明：插补，会修改速度设置
 输入：卡链接handle
@@ -1785,14 +1789,14 @@ SMC6200API  int32 __stdcall SMCGetConfigSoftlimit(SMCHANDLE handle, uint8 axis, 
 backlash 间隙补偿值， 单位：脉冲
 返回值：错误代码
 *************************************************************/
-SMC6200API  int32 __stdcall SMCSetBackLash(SMCHANDLE handle, uint8 axis, int32 lash );
+SMC6200API  int32 __stdcall SMCSetBackLash(SMCHANDLE handle, uint8 axis, float lash );
 /*************************************************************
 功能：设置/读取间隙补偿值
 参数：axis 指定轴号
 backlash 间隙补偿值， 单位：脉冲
 返回值：错误代码
 *************************************************************/
-SMC6200API  int32 __stdcall SMCGetBackLash(SMCHANDLE handle, uint8 axis, int32 *lash );
+SMC6200API  int32 __stdcall SMCGetBackLash(SMCHANDLE handle, uint8 axis, float *lash );
 
 
 /**************************************************************
@@ -1807,6 +1811,22 @@ mode 回原点的信号模式
 返回值：错误代码
 **********************************************************************/
 SMC6200API  int32 __stdcall SMCConfigHomeMode(SMCHANDLE handle, uint8 axis,uint8 home_dir,double vel,uint8 mode);
+
+
+/*************************************************************
+说明：读取目标位置
+输入：卡链接handle 轴号
+输出：坐标
+返回值：错误码
+*************************************************************/
+SMC6200API  int32 __stdcall SMCGetAimPosition(SMCHANDLE handle, uint8 iaxis, double* pposition);
+/*************************************************************
+说明：设置目标位置，必须在点位运动模式下，而且设置的目标位置为绝对位置
+输入：卡链接handle 轴号 坐标
+输出：
+返回值：错误码
+*************************************************************/
+SMC6200API  int32 __stdcall SMCSetAimPosition(SMCHANDLE handle, uint8 iaxis, double dposition);
 #ifdef  __cplusplus
 }
 #endif

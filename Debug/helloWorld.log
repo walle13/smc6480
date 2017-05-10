@@ -1,20 +1,22 @@
-﻿生成启动时间为 2017/5/7 22:28:14。
-     1>项目“C:\Users\walle\Desktop\0501\helloWorld\helloWorld.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2017/5/9 22:04:19。
+     1>项目“D:\Code\4.雷赛运动库\smc6480\helloWorld.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt SMC_1.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt SMC_1.cpp
          SMC_1.cpp
-     1>c:\users\walle\desktop\0501\helloworld\smc_1.cpp(26): warning C4101: “m_moveAxis”: 未引用的局部变量
-     1>c:\users\walle\desktop\0501\helloworld\smc_1.cpp(32): warning C4101: “speed”: 未引用的局部变量
-     1>c:\users\walle\desktop\0501\helloworld\smc_1.cpp(27): warning C4101: “m_moveMode”: 未引用的局部变量
-     1>c:\users\walle\desktop\0501\helloworld\smc_1.cpp(31): warning C4101: “distance”: 未引用的局部变量
-     1>c:\users\walle\desktop\0501\helloworld\smc_1.cpp(30): warning C4101: “out”: 未引用的局部变量
-     1>c:\users\walle\desktop\0501\helloworld\smc_1.cpp(25): warning C4101: “buffer”: 未引用的局部变量
+     1>d:\code\4.雷赛运动库\smc6480\smc_1.cpp(46): warning C4101: “m_moveAxis”: 未引用的局部变量
+     1>d:\code\4.雷赛运动库\smc6480\smc_1.cpp(52): warning C4101: “speed”: 未引用的局部变量
+     1>d:\code\4.雷赛运动库\smc6480\smc_1.cpp(47): warning C4101: “m_moveMode”: 未引用的局部变量
+     1>d:\code\4.雷赛运动库\smc6480\smc_1.cpp(54): warning C4101: “code”: 未引用的局部变量
+     1>d:\code\4.雷赛运动库\smc6480\smc_1.cpp(51): warning C4101: “distance”: 未引用的局部变量
+     1>d:\code\4.雷赛运动库\smc6480\smc_1.cpp(50): warning C4101: “out”: 未引用的局部变量
+     1>d:\code\4.雷赛运动库\smc6480\smc_1.cpp(44): warning C4101: “buffer”: 未引用的局部变量
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\walle\Desktop\0501\helloWorld\Debug\helloWorld.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\walle\Desktop\0501\helloWorld\Debug\helloWorld.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\walle\Desktop\0501\helloWorld\Debug\helloWorld.lib" /MACHINE:X86 Debug\SMC_1.obj
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Code\4.雷赛运动库\smc6480\Debug\helloWorld.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Code\4.雷赛运动库\smc6480\Debug\helloWorld.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Code\4.雷赛运动库\smc6480\Debug\helloWorld.lib" /MACHINE:X86 Debug\mc_code.obj
+         Debug\SMC_1.obj
          smc6x.lib
-         helloWorld.vcxproj -> C:\Users\walle\Desktop\0501\helloWorld\Debug\helloWorld.exe
-     1>已完成生成项目“C:\Users\walle\Desktop\0501\helloWorld\helloWorld.vcxproj”(Build 个目标)的操作。
+         helloWorld.vcxproj -> D:\Code\4.雷赛运动库\smc6480\Debug\helloWorld.exe
+     1>已完成生成项目“D:\Code\4.雷赛运动库\smc6480\helloWorld.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:01.60
+已用时间 00:00:00.58
